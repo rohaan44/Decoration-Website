@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+
+    font-family: 'Inter', sans-serif !important;
+    /* overflow-x: hidden !important; */
+    overflow-x: hidden !important;
+}
+:root{
+    --dark-color: #000000;
+    --h2-color: #8c8c8c;
+    --h1-color: #000000;
+    --light-color: #fff;
+}
+nav{
+    background-color: transparent!important;
+    position: absolute !important;
+    top: 0% !important;
+    z-index: 100 !important;
+    width: 100%;
+}
+.nav-item{
+    position: relative;
+}
+.nav-link {
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: relative;
+}
+.nav-icon {
+    font-size: 0.75rem;
+    font-weight: 500;
+    
+}
+.nav-icons{
+    width: 17%;
+}
+
+.nav-main{
+    width: 30%;
+}
+.nav-item::after{
+    content: "";
+    position: absolute !important;
+    left: 0px !important;
+    bottom: 0 !important;
+    top: 30px !important;
+    height: 3px  !important;
+    /* margin-top: px !important; */
+    width: 0% !important;
+    background-color: var(--light-color) !important;
+    cursor: pointer !important;
+    transition: all ease .5s !important;
+    text-align: center;
+  
+  }
+
+  .nav-item:hover::after{
+    width: 100% !important;
+    cursor: pointer !important;
+  
+    }
+    .logo{
+        width: 10%;
+    }
+    .logo img{
+        width: 60%;
+    }
+   
+    @media (max-width: 992px) {
+        .nav-item::after{
+            content: "";
+            position: absolute !important;
+            left: 0px !important;
+            bottom: 0 !important;
+            top: 50px !important;
+            height: 3px  !important;
+            width: 0% !important;
+            background-color: transparent !important;
+            cursor: pointer !important;
+            transition: all ease .5s !important;
+            text-align: center;
+        }
+        .nav-item:hover::after{
+            width: 0%;
+        }
+    }
+    .bg{
+        width: 100%;
+        height: 70vh;
+        position: relative;
+    }
+    .bg .img{
+        width: 100%;
+        height: 100%;
+    }
+    .bg .img img{
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        position: absolute;
+    }
+    .overlay{
+        background-color: #000000c6;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0%;
+    }
+    .heading{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 4;
+        text-align: center;
+    }
+    .heading h1{
+        color: white;
+        font-size:3.5rem;
+    }
+    .heading h1 span{
+        color: var(--h2-color);
+        font-size: 1.5rem;
+    }
+    .overlay-metal{
+        background-color: #0000005c;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0%;
+    }
+    .card{
+        border-radius: 20px !important;
+    }
+    .card .img img{
+        height: 275px;
+        object-fit: cover;
+    }
+    .card1{
+        /* width: 20%; */
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    
+    .card1:hover .overlay-metal, .overlay-content h5{
+        background-color: transparent !important;
+        text-shadow: 0px 0px 20px black;
+        scale: 1.2;
+    }
+    .row {
+        width: 100%;
+    }
+    .head h1{
+        font-size: 3.5rem !important;
+        font-weight: bold;
+    }
+    .overlay-content{
+        z-index: 4;
+    }
+    .overlay-content h5{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .card-title{
+        font-size: 1.5rem !important;
+    }
+    @media (max-width:1050px){
+        .heading h1{
+            font-size: 2.5rem;
+        }
+        .heading h1 span{
+            font-size: 1rem !important;
+        }
+    }
+    @media (max-width:896px) {
+        .card-content h6{
+            font-size: 0.7rem !important;
+        }
+        .card-content a{
+            font-size: 0.6rem !important;
+        }
+        .card-content p{
+        font-size: 0.6rem!important;
+    
+        }
+    }
+    @media (max-width:450px) {
+        .card-content h6{
+            font-size: 0.5rem !important;
+        }
+        .card-content a{
+            font-size: 0.4rem !important;
+        }
+        .card-content p{
+        font-size: 0.4rem!important;
+    
+        }
+        .heading h1{
+            font-size: 1.5rem;
+        }
+        .heading h1 span{
+            font-size: 0.9rem !important;
+        }
+    }
+    @media (max-width:870px){
+        .card-title{
+            font-size: 1.5rem !important;
+        }
+    }
+    @media (max-width:515px){
+        .category-card img, .overlay-metal{
+            /* width: 170px !important; */
+            height: 130px !important;
+        }
+        .card-title{
+            font-size: 0.7rem !important;
+        }
+    }

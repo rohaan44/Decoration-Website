@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+
+    font-family: 'Inter', sans-serif !important;
+}
+:root{
+    --dark-color: #000000;
+    --h2-color: #8c8c8c;
+    --h1-color: #000000;
+    --light-color: #fff;
+}
+nav{
+    background-color: transparent !important;
+    position: absolute !important;
+    top: 0% !important;
+    z-index: 100 !important;
+    width: 100%;
+    color: black !important;
+    padding-top: -50px;
+}
+.nav-item{
+    position: relative;
+}
+.nav-link {
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: relative;
+
+}
+.nav-icon {
+    font-size: 0.75rem;
+    font-weight: 500;
+    
+}
+.nav-icons{
+    width: 10%;
+}
+
+.nav-main{
+    width: 45%;
+}
+.nav-item::after{
+    content: "";
+    position: absolute !important;
+    left: 0px !important;
+    bottom: 0 !important;
+    top: 30px !important;
+    height: 3px  !important;
+    /* margin-top: px !important; */
+    width: 0% !important;
+    background-color: #7F7F7F !important;
+    cursor: pointer !important;
+    transition: all ease .5s !important;
+    text-align: center;
+  
+  }
+
+  .nav-item:hover::after{
+    width: 100% !important;
+    cursor: pointer !important;
+  
+    }
+    .logo{
+        width: 7%;
+    }
+
+   
+    @media (max-width: 992px) {
+        .nav-item::after{
+            content: "";
+            position: absolute !important;
+            left: 0px !important;
+            bottom: 0 !important;
+            top: 50px !important;
+            height: 3px  !important;
+            width: 0% !important;
+            background-color: transparent !important;
+            cursor: pointer !important;
+            transition: all ease .5s !important;
+            text-align: center;
+        }
+        .nav-item:hover::after{
+            width: 0%;
+        }
+    }
+    .more{
+        margin-top: 130px !important; 
+        background-color: rgb(0, 0, 0) !important; 
+        height: 80px;
+        background-blend-mode: difference;
+        
+    }
+    .nav-sec ul{
+        backdrop-filter: blur(5px) !important;
+        align-items: center !important;
+        /* background-color: rgba(181, 181, 181, 0.329) !important;  */
+    
+    }
+    .nav-sec ul li{
+        list-style-type: none !important;
+
+    }
+    .nav-sec ul li a{
+        color: white !important;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+    }
+    .nav-sec ul li a:hover{
+        color: #818181 !important;
+        font-size: 1.3rem;
+        transition: all ease 1s;
+    }
+    .nav-sec{
+        backdrop-filter: blur(5px) !important;
+    padding: 25px 0px;
+        /* background-color: rgba(181, 181, 181, 0.329) !important;  */
+    }

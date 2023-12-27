@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Ubuntu&display=swap');
+*>h1{
+    font-family: 'Poppins', sans-serif;
+}
+*>h2,h3,h4,button{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+*>p,h5,h6,span,a{
+    font-family: 'Montserrat', sans-serif;
+}
+*::selection{
+    color: white;
+    background-color: rgb(36, 36, 36);
+}
